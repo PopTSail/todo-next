@@ -1,0 +1,25 @@
+{
+  "name": "todo-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "start": "next start",
+    "lint": "next lint",
+    "build": "next build",
+    "predeploy": "npm run build",
+    "postbuild": "node create-nojekyll.js",
+    "deploy": "gh-pages -d out"
+  },
+  "dependencies": {
+    "next": "15.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.1",
+    "gh-pages": "^6.3.0"
+  }
+}
